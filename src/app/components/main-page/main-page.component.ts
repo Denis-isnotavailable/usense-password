@@ -33,7 +33,7 @@ export class MainPageComponent implements OnInit {
       this.colorEasy = this.colors[0];
       this.colorMedium = this.colors[0];
       this.colorStrong = this.colors[0];
-    } if (this.password.length < 8) {
+    } else if (this.password.length < 8) {
       this.colorEasy = this.colors[1];
       this.colorMedium = this.colors[1];
       this.colorStrong = this.colors[1];
