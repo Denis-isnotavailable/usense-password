@@ -29,6 +29,8 @@ export class MainPageComponent implements OnInit {
     let isNumber = this.num.test(this.password);
     let isDigit = this.dig.test(this.password);
 
+    this.isHide ? this.type = 'password' : this.type = 'text';
+
     if (this.password.length === 0) {
       this.colorEasy = this.colors[0];
       this.colorMedium = this.colors[0];
@@ -51,8 +53,6 @@ export class MainPageComponent implements OnInit {
       this.colorMedium = this.colors[3];
       this.colorStrong = this.colors[3];
     }
-
-    this.isHide ? this.type = 'password' : this.type = 'text';
 
   }
 
