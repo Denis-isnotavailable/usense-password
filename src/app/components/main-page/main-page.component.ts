@@ -37,6 +37,7 @@ export class MainPageComponent implements OnInit {
       this.colorEasy = this.colors[1];
       this.colorMedium = this.colors[1];
       this.colorStrong = this.colors[1];
+      return;
     } if (isLetter || isNumber || isDigit) {
       this.colorEasy = this.colors[1];
       this.colorMedium = this.colors[0];
