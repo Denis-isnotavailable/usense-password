@@ -1,7 +1,8 @@
 
 <div class="container">
-    <app-main-page (newPasswordEvent)="addPassword($event)" ></app-main-page>
+    <div [formGroup]="form" class="form-thumb">
+        <app-main-page formControlName="formPassword" ></app-main-page>
+    </div>
+    
     <app-check-zone [password]="passwordApp" ></app-check-zone>
 </div>
-
-

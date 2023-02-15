@@ -1,24 +1,7 @@
-form {
-    margin-top: 36px;
-    padding: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .input-group {
-    max-width: 500px;
-}
-
-.easy,
-.medium,
-.strong {
-    width: 300px;
-    padding: 10px 40px 10px 40px;
-    margin-top: 16px;
-    border: 1px solid black;
-    text-align: center;    
+    max-width: 500px;   
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {

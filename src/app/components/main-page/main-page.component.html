@@ -1,23 +1,18 @@
 
-
-<form>
-    <div class="input-group">
-        <span class="input-group-btn">
-            <button 
-            class="btn btn-default" 
-            type="button"
-            on-click="changePasswordView()"
-            >
-                {{isHide ? "Show" : "Hide"}}
-            </button>
-        </span>
-        <input 
-            type={{type}}
-            class="form-control" 
-            placeholder="Enter your password..."
-            name="password"
-            id="password"
-            [(ngModel)]="password"            
+<div class="input-group">
+    <span class="input-group-btn">
+        <button 
+        class="btn btn-default" 
+        type="button"
+        on-click="changePasswordView()"
         >
-    </div>
-</form>
+            {{isHide ? "Show" : "Hide"}}
+        </button>
+    </span>
+    <input 
+        type={{type}}
+        class="form-control" 
+        placeholder="Enter your password..."            
+        [(ngModel)]="value"            
+    >
+</div>
