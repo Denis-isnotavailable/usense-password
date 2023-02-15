@@ -1,3 +1,7 @@
 
+<div class="container">
+    <app-main-page (newPasswordEvent)="addPassword($event)" ></app-main-page>
+    <app-check-zone [password]="passwordApp" ></app-check-zone>
+</div>
 
-<app-main-page></app-main-page>
+

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'usense-password';
+  title: string = 'usense-password';
+  passwordApp: string = '';
+
+  addPassword(updatedPassword: string) {
+    this.passwordApp = updatedPassword;
+  }
 }
